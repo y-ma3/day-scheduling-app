@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
     
@@ -22,4 +23,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .modelContainer(for: Task.self)
 }
