@@ -14,6 +14,10 @@
 		5CBC5D672AC864F50068501F /* DaySchedulingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5D662AC864F50068501F /* DaySchedulingTests.swift */; };
 		5CBC5D712AC864F50068501F /* DaySchedulingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5D702AC864F50068501F /* DaySchedulingUITests.swift */; };
 		5CBC5D732AC864F50068501F /* DaySchedulingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5D722AC864F50068501F /* DaySchedulingUITestsLaunchTests.swift */; };
+		5CBC5D802AC865550068501F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5D7F2AC865550068501F /* MainView.swift */; };
+		5CBC5D822AC8657B0068501F /* PartsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5D812AC8657B0068501F /* PartsUI.swift */; };
+		5CBC5D842AC8659E0068501F /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5D832AC8659E0068501F /* ModalView.swift */; };
+		5CBC5D892AC8687B0068501F /* DBModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5D882AC8687B0068501F /* DBModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		5CBC5D6C2AC864F50068501F /* DaySchedulingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaySchedulingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBC5D702AC864F50068501F /* DaySchedulingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedulingUITests.swift; sourceTree = "<group>"; };
 		5CBC5D722AC864F50068501F /* DaySchedulingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedulingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CBC5D7F2AC865550068501F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5CBC5D812AC8657B0068501F /* PartsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartsUI.swift; sourceTree = "<group>"; };
+		5CBC5D832AC8659E0068501F /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		5CBC5D882AC8687B0068501F /* DBModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 			children = (
 				5CBC5D552AC864F20068501F /* DaySchedulingApp.swift */,
 				5CBC5D572AC864F20068501F /* ContentView.swift */,
+				5CBC5D7F2AC865550068501F /* MainView.swift */,
+				5CBC5D832AC8659E0068501F /* ModalView.swift */,
+				5CBC5D882AC8687B0068501F /* DBModels.swift */,
+				5CBC5D812AC8657B0068501F /* PartsUI.swift */,
 				5CBC5D592AC864F40068501F /* Assets.xcassets */,
 				5CBC5D5B2AC864F40068501F /* Preview Content */,
 			);
@@ -215,6 +227,8 @@
 				Base,
 			);
 			mainGroup = 5CBC5D492AC864F20068501F;
+			packageReferences = (
+			);
 			productRefGroup = 5CBC5D532AC864F20068501F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBC5D822AC8657B0068501F /* PartsUI.swift in Sources */,
+				5CBC5D892AC8687B0068501F /* DBModels.swift in Sources */,
 				5CBC5D582AC864F20068501F /* ContentView.swift in Sources */,
+				5CBC5D802AC865550068501F /* MainView.swift in Sources */,
 				5CBC5D562AC864F20068501F /* DaySchedulingApp.swift in Sources */,
+				5CBC5D842AC8659E0068501F /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

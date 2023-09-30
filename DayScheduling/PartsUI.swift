@@ -1,18 +1,47 @@
-//
-//  PartsUI.swift
-//  DayScheduling
-//
-//  Created by 釣悠馬 on 2023/09/30.
-//
-
 import SwiftUI
 
-struct PartsUI: View {
+struct ButtonView: View {
+    
+    var color: Color
+    var action: () -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack {
+            
+            Button (action: action) {
+                ZStack {
+                    Color.white.frame(width: 70, height: 70)
+                        .cornerRadius(30)
+                        .shadow(radius: 10)
+                    Image(systemName: "plus")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.black)
+                }
+            }
+        }
     }
 }
 
-#Preview {
-    PartsUI()
+struct TaskAddButtonView: View {
+    
+    var buttonText: String
+    var width: CGFloat
+    var color: Color
+    var action: () -> Void
+    
+    var body: some View {
+        
+        Button (action: action) {
+            ZStack {
+                Color.white.frame(width: width, height: 50)
+                    .cornerRadius(25)
+                    .shadow(radius: 10)
+                Text(buttonText)
+                    .scaledToFill()
+                    .foregroundColor(color)
+            }
+        }
+    }
 }

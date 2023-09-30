@@ -1,21 +1,22 @@
-//
-//  ContentView.swift
-//  DayScheduling
-//
-//  Created by 釣悠馬 on 2023/09/30.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var selection = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $selection) {
+            MainView()
+                .tabItem() {
+                    Label("時系列", systemImage: "calendar.day.timeline.left")
+                }
+                .tag(0)
+            MainView()
+                .tabItem() {
+                    Label("ToDo", systemImage: "gearshape")
+                }
+                .tag(1)
         }
-        .padding()
     }
 }
 
