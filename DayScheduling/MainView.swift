@@ -32,6 +32,7 @@ struct MainView: View {
         }
         .sheet(isPresented: $isModal) {
             ModalView()
+                .presentationDetents([.medium])
         }
         .onAppear {
             Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in

@@ -8,11 +8,10 @@ struct ButtonView: View {
     var body: some View {
         
         ZStack {
-            
             Button (action: action) {
                 ZStack {
                     Color.white.frame(width: 70, height: 70)
-                        .cornerRadius(30)
+                        .cornerRadius(35)
                         .shadow(radius: 10)
                     Image(systemName: "plus")
                         .resizable()

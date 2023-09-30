@@ -1,17 +1,12 @@
-//
-//  DaySchedulingApp.swift
-//  DayScheduling
-//
-//  Created by 釣悠馬 on 2023/09/30.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct DaySchedulingApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: Task.self)
         }
     }
 }
