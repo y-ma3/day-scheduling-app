@@ -44,7 +44,7 @@ struct PushView: View {
             })
         }
         .sheet(isPresented: $isModal2) {
-            ModalViewSecond(selectedDate: self.$selectedDate)
+            ModalViewSecond(selectedDate: self.$selectedDate, isModal2: self.$isModal2)
                 .presentationDetents([.large, .height(400), .fraction(0.5)])
         }
     }

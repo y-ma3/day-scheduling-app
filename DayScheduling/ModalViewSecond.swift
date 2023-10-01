@@ -12,6 +12,7 @@ struct ModalViewSecond: View {
     @Query private var tasks: [Task]
     
     @Binding var selectedDate: Date?
+    @Binding var isModal2: Bool
     
     var body: some View {
         VStack {
@@ -45,6 +46,7 @@ struct ModalViewSecond: View {
                 taskName = ""
                 startTime = Date()
                 endTime = Date()
+                isModal2 = false
             })
         }
         .onAppear {
@@ -66,5 +68,5 @@ struct ModalViewSecond: View {
 }
 
 #Preview {
-    ModalViewSecond(selectedDate: .constant(Date()))
+    ModalViewSecond(selectedDate: .constant(Date()), isModal2: .constant(false))
 }

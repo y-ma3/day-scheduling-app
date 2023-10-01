@@ -1,8 +1,12 @@
 import SwiftUI
 import FSCalendar
+import SwiftData
 
 struct CalendarView: View {
     @State private var selectedDate: Date?
+    
+    @Environment(\.modelContext) private var context
+    @Query(sort: \Task.date) private var tasks: [Task]
 
     var body: some View {
         NavigationView {
@@ -17,6 +21,7 @@ struct CalendarView: View {
                 .disabled(selectedDate == nil) // 日付が選択されていない場合は無効にする
             }
         }
+
     }
 }
 

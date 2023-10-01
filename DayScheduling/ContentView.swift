@@ -9,7 +9,7 @@ struct ContentView: View {
         TabView(selection: $selection) {
             MainView()
                 .tabItem() {
-                    Label("時系列", systemImage: "calendar.day.timeline.left")
+                    Label("スケジュール", systemImage: "calendar.day.timeline.left")
                 }
                 .tag(0)
             CalendarView()
