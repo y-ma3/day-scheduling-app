@@ -48,7 +48,7 @@ struct MainView: View {
         }
         .sheet(isPresented: $isModal) {
             ModalView(isModal: self.$isModal)
-                .presentationDetents([.medium])
+                .presentationDetents([.large, .height(400), .fraction(0.5)])
         }
         .onAppear {
             Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in

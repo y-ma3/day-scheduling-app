@@ -38,7 +38,7 @@ struct ModalView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
             }
-            TaskAddButtonView(buttonText: "予定を追加", width: 200, color: .blue, action: {
+            TextButtonView(buttonText: "予定を追加", width: 200, color: .blue, action: {
                 add(name: taskName, start: startTime, end: endTime)
                 taskName = ""
                 startTime = Date()

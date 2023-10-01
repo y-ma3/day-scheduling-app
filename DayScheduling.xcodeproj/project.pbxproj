@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C62EC022AC92F1300C81104 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5C62EC012AC92F1300C81104 /* FSCalendar */; };
 		5C62EC062AC9307600C81104 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C62EC052AC9307600C81104 /* CalendarView.swift */; };
+		5C62EC082AC9406E00C81104 /* PushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C62EC072AC9406E00C81104 /* PushView.swift */; };
 		5CBC5D562AC864F20068501F /* DaySchedulingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5D552AC864F20068501F /* DaySchedulingApp.swift */; };
 		5CBC5D582AC864F20068501F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5D572AC864F20068501F /* ContentView.swift */; };
 		5CBC5D5A2AC864F40068501F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBC5D592AC864F40068501F /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		5C62EC052AC9307600C81104 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		5C62EC072AC9406E00C81104 /* PushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushView.swift; sourceTree = "<group>"; };
 		5CBC5D522AC864F20068501F /* DayScheduling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayScheduling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBC5D552AC864F20068501F /* DaySchedulingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedulingApp.swift; sourceTree = "<group>"; };
 		5CBC5D572AC864F20068501F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				5CBC5D7F2AC865550068501F /* MainView.swift */,
 				5CBC5D832AC8659E0068501F /* ModalView.swift */,
 				5C62EC052AC9307600C81104 /* CalendarView.swift */,
+				5C62EC072AC9406E00C81104 /* PushView.swift */,
 				5CBC5D882AC8687B0068501F /* DBModels.swift */,
 				5CBC5D812AC8657B0068501F /* PartsUI.swift */,
 				5CBC5D592AC864F40068501F /* Assets.xcassets */,
@@ -284,6 +287,7 @@
 				5C62EC062AC9307600C81104 /* CalendarView.swift in Sources */,
 				5CBC5D892AC8687B0068501F /* DBModels.swift in Sources */,
 				5CBC5D582AC864F20068501F /* ContentView.swift in Sources */,
+				5C62EC082AC9406E00C81104 /* PushView.swift in Sources */,
 				5CBC5D802AC865550068501F /* MainView.swift in Sources */,
 				5CBC5D562AC864F20068501F /* DaySchedulingApp.swift in Sources */,
 				5CBC5D842AC8659E0068501F /* ModalView.swift in Sources */,

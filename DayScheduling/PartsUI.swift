@@ -23,7 +23,7 @@ struct ButtonView: View {
     }
 }
 
-struct TaskAddButtonView: View {
+struct TextButtonView: View {
     
     var buttonText: String
     var width: CGFloat
