@@ -3,6 +3,8 @@ import SwiftData
 
 struct ModalView: View {
     
+    @Binding var isModal:Bool
+    
     @State var startTime = Date()
     @State var endTime = Date()
     @State var taskName:String = ""
@@ -11,10 +13,6 @@ struct ModalView: View {
     
     @Environment(\.modelContext) private var context
     @Query private var tasks: [Task]
-    
-    init() {
-        UIDatePicker.appearance().minuteInterval = 15
-    }
     
     var body: some View {
         VStack {
@@ -43,7 +41,12 @@ struct ModalView: View {
             TaskAddButtonView(buttonText: "予定を追加", width: 200, color: .blue, action: {
                 add(name: taskName, start: startTime, end: endTime)
                 taskName = ""
+                startTime = Date()
+                endTime = Date()
+                isModal = false
             })
+        }.onAppear {
+            UIDatePicker.appearance().minuteInterval = 15
         }
     }
     private func add(name: String, start: Date, end: Date) {
@@ -53,6 +56,6 @@ struct ModalView: View {
 }
 
 #Preview {
-    ModalView()
+    ModalView(isModal: .constant(true))
         .modelContainer(for: Task.self)
 }

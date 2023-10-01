@@ -47,7 +47,7 @@ struct MainView: View {
             })
         }
         .sheet(isPresented: $isModal) {
-            ModalView()
+            ModalView(isModal: self.$isModal)
                 .presentationDetents([.medium])
         }
         .onAppear {

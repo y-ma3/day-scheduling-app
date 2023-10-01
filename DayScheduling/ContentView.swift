@@ -12,9 +12,9 @@ struct ContentView: View {
                     Label("時系列", systemImage: "calendar.day.timeline.left")
                 }
                 .tag(0)
-            MainView()
+            CalendarView()
                 .tabItem() {
-                    Label("ToDo", systemImage: "gearshape")
+                    Label("カレンダー", systemImage: "calendar")
                 }
                 .tag(1)
         }
