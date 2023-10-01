@@ -5,13 +5,13 @@ import SwiftData
 class Task {
     var name: String
     let date: Date
-    var startTime: String
-    var endTime: String
+    var start: Date
+    var end: Date
 
-    init(name: String, startTime: String, endTime: String) {
+    init(name: String, start: Date, end: Date) {
         self.name = name
         date = Date()
-        self.startTime = startTime
-        self.endTime = endTime
+        self.start = start
+        self.end = end
     }
 }
