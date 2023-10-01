@@ -28,11 +28,13 @@ struct MainView: View {
                 Spacer()
                 List {
                     ForEach(tasks) { task in
-                        VStack {
-                            Text("\(timeFormatter.string(from: task.start)) ~ \(timeFormatter.string(from: task.end))")
-                                .padding(.bottom)
-                            Text("\(task.name)").font(.title)
-                                .padding(.bottom)
+                        if dateFormatter.string(from: task.date) == dateFormatter.string(from: nowDate) {
+                            VStack {
+                                Text("\(timeFormatter.string(from: task.start)) ~ \(timeFormatter.string(from: task.end))")
+                                    .padding(.bottom)
+                                Text("\(task.name)").font(.title)
+                                    .padding(.bottom)
+                            }
                         }
                     }
                     .onDelete(perform: { indexSet in
@@ -57,6 +59,7 @@ struct MainView: View {
             }
         }
     }
+    
     private func delete(task: Task) {
         context.delete(task)
     }

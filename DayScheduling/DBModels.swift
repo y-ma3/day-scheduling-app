@@ -8,9 +8,9 @@ class Task {
     var start: Date
     var end: Date
 
-    init(name: String, start: Date, end: Date) {
+    init(name: String, date: Date, start: Date, end: Date) {
         self.name = name
-        date = Date()
+        self.date = date
         self.start = start
         self.end = end
     }

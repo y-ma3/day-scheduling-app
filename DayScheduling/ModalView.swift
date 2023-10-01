@@ -50,7 +50,7 @@ struct ModalView: View {
         }
     }
     private func add(name: String, start: Date, end: Date) {
-        let data = Task(name: name, start: startTime, end: endTime)
+        let data = Task(name: name, date: Date(), start: startTime, end: endTime)
         context.insert(data)
     }
 }
